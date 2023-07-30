@@ -11,7 +11,7 @@ def _draw_mandelbrot_fractal(
     x2: int,
     y1: int,
     y2: int,
-    farben: ndarray,
+    colors: ndarray,
     max_iter: int,
 ):
     x_step = (x2 - x1) / width
@@ -25,7 +25,7 @@ def _draw_mandelbrot_fractal(
                 z = z**2 + c
                 if z.imag**2 + z.real**2 > 4:
                     break
-            fractal[x][y] = farben[i]
+            fractal[x][y] = colors[i]
     return fractal
 
 
@@ -47,9 +47,9 @@ class Fractal:
         x2: int,
         y1: int,
         y2: int,
-        farben: ndarray,
+        colors: ndarray,
         max_iter: int,
     ):
         return _draw_mandelbrot_fractal(
-            self.width, self.height, fractal, x1, x2, y1, y2, farben, max_iter
+            self.width, self.height, fractal, x1, x2, y1, y2, colors, max_iter
         )
