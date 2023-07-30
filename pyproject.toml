@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "mandelbrot"
+version = "0.1.0"
+description = ""
+authors = ["GruPa180276 <40146720180276@litec.ac.at>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+matplotlib = "^3.7.2"
+pygame = "^2.5.0"
+numba = "^0.57.1"
+
+[tool.poetry.group.dev.dependencies]
+black = {version = "^23.7.0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
