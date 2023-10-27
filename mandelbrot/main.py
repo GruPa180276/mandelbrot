@@ -5,7 +5,7 @@ from utils.colors import generate_colorset
 from fractal import Fractal
 
 
-size = width, height = 3840, 2160
+size = width, height = 1920, 1080
 
 
 def main():
